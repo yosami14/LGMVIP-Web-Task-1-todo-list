@@ -1,9 +1,17 @@
 const btnListener = document.querySelector('#btnListner');
 btnListener.addEventListener('click', addListFunction);
 
+
+const addTask = document.querySelector('.addTaskHeader');
+addTask.addEventListener('click', showInput);
+
+let taskCount = 0;
+
 function addListFunction() {
   const inputValue = document.querySelector('#listInput').value;
   const addList = document.querySelector('.addedList');
+
+  
   
   // CREATE LIST DIV
   const listDiv = document.createElement('div');
@@ -42,4 +50,10 @@ function addListFunction() {
       toDotext.style.textDecoration = 'none'; // Remove strikethrough when checkbox is unchecked
     }
   });
+}
+
+function showInput(){
+
+const listView = document.querySelector('.listView')
+listView.classList.remove('hidden')
 }

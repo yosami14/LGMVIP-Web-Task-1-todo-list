@@ -1,3 +1,109 @@
-li {
-  text-decoration: none;
+/* var */
+:root {
+  --primary-color: #4043c9;
+  --secondary-color: #ffff;
+  --text-primary-color: black;
+  --text-secondary-color: #ffff;
+  --text-third-color: #4043c9;
+  --border-radius: 15px;
+}
+
+/* class lists */
+.center-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+.inline {
+  display: inline;
+}
+.flex {
+  display: flex;
+}
+
+/*  */
+
+#main {
+  padding: 2% 3% 2%;
+  height: 100vh;
+}
+
+.container {
+  border: 5px solid black;
+  width: 500px;
+}
+
+/* Banner */
+button {
+  background: none;
+  border: none;
+  color: var(--text-primary-color);
+}
+
+.banner {
+  background: var(--primary-color);
+  color: var(--text-secondary-color);
+  border-radius: 25px 25px 0 0;
+}
+.upperBanner {
+  justify-content: space-around;
+}
+.upperBanner button {
+  color: var(--text-secondary-color);
+}
+
+.lowerBanner {
+  justify-content: space-around;
+}
+.tasksView {
+  justify-content: start;
+}
+.addTaskHeader {
+  border: none;
+  padding: 2% 5% 2%;
+  background-color: var(--secondary-color);
+  color: var(--text-third-color);
+}
+.banner div {
+  padding: 2% 4% 2%;
+}
+/* Input div */
+.hidden {
+  display: none;
+}
+.addList input {
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  width: 70%;
+}
+#btnListner {
+  background: var(--text-secondary-color);
+  color: var(--primary-color);
+  margin-left: 5px;
+}
+
+/* Date list */
+.listDateHolder {
+  padding: 3% 2% 3%;
+  background: var(--primary-color);
+  color: var(--text-secondary-color);
+  border-radius: var(--border-radius);
+}
+
+.listDates {
+  justify-content: start;
+  padding: 3% 6% 3%;
+}
+
+.listDates h2 {
+  margin: 1% 4% 1%;
 }
